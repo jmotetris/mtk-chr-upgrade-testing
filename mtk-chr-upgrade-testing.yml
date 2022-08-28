@@ -17,9 +17,9 @@
          commands:
            - "[:put ([/system package update check-for-updates])]"
        register: output
-     - name: print variable
-       debug:
-         msg: "{{ output }}"
+#     - name: print variable
+#       debug:
+#         msg: "{{ output }}"
      - name: Run upgrade if new version is available
        routeros_command:
          commands:
