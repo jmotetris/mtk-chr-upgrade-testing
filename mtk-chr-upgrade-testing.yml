@@ -7,7 +7,6 @@
    ansible_command_timeout: 120
 
 
-   tasks:
      - name: Set Version to Testing
        routeros_command:
          commands:
