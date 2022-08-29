@@ -2,11 +2,11 @@
 - name: Check ROS and Upgrade if Needed
   hosts: lab_mikrotiks
   gather_facts: false
-  strategy: free
+#  strategy: free
   vars:
    ansible_command_timeout: 120
 
-
+  tasks:
      - name: Set Version to Testing
        routeros_command:
          commands:
