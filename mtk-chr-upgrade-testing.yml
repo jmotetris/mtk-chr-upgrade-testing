@@ -24,7 +24,7 @@
          commands:
             - /system package update install
        when: output.stdout is search('available')
-     - name: System Reboot
-       routeros_command:
-         commands:
-            - :execute {/system reboot;}
+#     - name: System Reboot
+#       routeros_command:
+#         commands:
+#            - :execute {/system reboot;}
